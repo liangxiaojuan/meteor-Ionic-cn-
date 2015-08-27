@@ -1,0 +1,21 @@
+
+<ion-header-bar class="bar-positive">
+    <a class="button button-positive"  href="/home/css">
+        <i class="icon ion-chevron-left"></i>
+    </a>
+    <h1 class="title">Header</h1>
+
+</ion-header-bar>
+
+<ion-content>
+    <div class="list">
+
+        <a class="item item-button-right"   ng-repeat="footer in footers" href="/home/css/footer/{{footer.name}}">
+            {{footer.name}}{{footer.color}}
+            <button class="button button-positive">
+                <i class="icon ion-arrow-right-c"></i>
+            </button>
+        </a>
+
+    </div>
+</ion-content>
