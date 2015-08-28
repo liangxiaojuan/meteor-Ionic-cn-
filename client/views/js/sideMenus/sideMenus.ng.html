@@ -1,0 +1,40 @@
+
+
+<div class="bar bar-header bar-positive">
+    <a class="button bar-positive"  href="/home/js">
+        <i class="icon ion-chevron-left"></i>
+    </a>
+    <div class="h1 title">sideMenus(侧边导航)</div>
+</div>
+
+
+<ion-side-menus>
+    <!-- 中间内容 -->
+
+    <ion-side-menu-content >
+        <div style="margin-left: 100px;margin-top: 100px">
+
+
+        <button class="button button-positive" ng-click="toggleLeft()">
+            打开侧边栏
+        </button>
+        </div>
+    </ion-side-menu-content>
+
+    <!-- 左侧菜单 -->
+    <ion-side-menu side="left">
+
+        <div style="margin-left: 100px;margin-top: 100px">
+
+            这是左边
+        </div>
+    </ion-side-menu>
+
+    <!-- 右侧菜单 -->
+    <ion-side-menu side="right">
+
+        <div style="margin-left: 100px;margin-top: 100px">
+            这个右边
+        </div>
+    </ion-side-menu>
+</ion-side-menus>

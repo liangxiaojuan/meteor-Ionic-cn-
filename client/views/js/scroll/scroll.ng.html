@@ -1,0 +1,24 @@
+
+<div class="bar bar-header">
+    <a class="button button-light"  href="/home/js">
+        <i class="icon ion-chevron-left"></i>
+    </a>
+    <div class="h1 title">scroll(滚动)</div>
+</div>
+<div style="margin-top: 50px">
+
+    <ion-content delegate-handle="mainScroll">
+        <button ng-click="scrollMainToTop()" class="button button-dark">
+            滚动内容到顶部!
+        </button>
+        <ion-scroll delegate-handle="small" style="height: 200px;" >
+            <button ng-click="scrollSmallToTop()" class="button button-primary">
+                滚动小区域到顶部!
+            </button>
+        </ion-scroll>
+
+    </ion-content>
+
+
+
+</div>

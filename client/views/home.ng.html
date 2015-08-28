@@ -1,31 +1,35 @@
 
-<ion-header-bar class="bar-positive">
+<div class="bar bar-header bar-positive">
+
     <div class="buttons">
 
     </div>
-    <h1 class="title">Ionic meteor 框架</h1>
+    <h1 class="h1 title">Meteor app</h1>
     <div class="buttons">
 
     </div>
-</ion-header-bar>
+</div>
 
 <ion-content>
 
     <!-- The list directive is great, but be sure to also checkout the collection repeat directive when scrolling through large lists -->
+<div style="margin-top: 50px">
+
 
     <ion-list show-delete="data.showDelete" show-reorder="data.showReorder">
 
         <ion-item item="item" href="/home/css" class="item-remove-animate">
-          CSS
+          CSS组件
         </ion-item>
-        <ion-item item="item" href="#/item/{{item.id}}" class="item-remove-animate">
-           JS
+        <ion-item item="item" href="/home/js" class="item-remove-animate">
+           JS组件
         </ion-item>
-        <ion-item item="item" href="#/item/{{item.id}}" class="item-remove-animate">
-            CSS
+        <ion-item item="item" href="/home/cordova" class="item-remove-animate">
+            cordova插件
         </ion-item>
 
     </ion-list>
-
+</div>
 </ion-content>
+
 

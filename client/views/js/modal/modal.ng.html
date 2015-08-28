@@ -1,0 +1,31 @@
+
+
+<div class="bar bar-header">
+    <a class="button button-light"  href="/home/js">
+        <i class="icon ion-chevron-left"></i>
+    </a>
+    <div class="h1 title">modal(模态框)</div>
+</div>
+<ion-content>
+    <div style="margin-top: 50px">
+    <!-- The list directive is great, but be sure to also checkout the collection repeat directive when scrolling through large lists -->
+
+    <button class="button button-balanced" ng-click="openModal()">
+        点我
+    </button>
+    <script id="my-modal.html" type="text/ng-template">
+        <ion-modal-view>
+            <ion-header-bar>
+                <h1 class="title">My Modal title</h1>
+                <a class="button button-outline icon-right ion-close-round button-balanced" ng-click="closeModal()"></a>
+            </ion-header-bar>
+            <ion-content>
+                Hello!
+            </ion-content>
+
+        </ion-modal-view>
+    </script>
+        </div>
+</ion-content>
+
+

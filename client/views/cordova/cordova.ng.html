@@ -1,0 +1,24 @@
+
+<div class="bar bar-header bar-positive">
+    <a class="button button-positive"  href="/home">
+        <i class="icon ion-chevron-left"></i>
+    </a>
+
+    <h1 class="title">cordova</h1>
+
+</div>
+<ion-content>
+    <div style="margin-top: 50px">
+    <div class="list">
+
+        <a class="item item-button-right"   ng-repeat="cordova in cordovas" href="/home/cordova/{{cordova.id}}">
+            {{cordova.name}}
+            <button class="button button-positive">
+                <i class="icon ion-arrow-right-c"></i>
+            </button>
+        </a>
+
+    </div>
+
+</div>
+</ion-content>

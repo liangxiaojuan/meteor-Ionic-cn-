@@ -22,7 +22,7 @@ angular.module("index").config(['$urlRouterProvider', '$stateProvider', '$locati
                 })
 
                 .state('card', {
-                    url: '/home/css/cards/list',
+                    url: '/home/css/cards/card',
                     templateUrl: 'client/views/css/cards/card.ng.html',
                     controller: ''
 

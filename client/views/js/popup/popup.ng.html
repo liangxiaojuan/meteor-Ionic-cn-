@@ -1,0 +1,31 @@
+
+<ion-header-bar class="bar-positive">
+    <a class="button button-positive"  href="/home/js">
+        <i class="icon ion-chevron-left"></i>
+    </a>
+    <h1 class="title">popup(提示框)</h1>
+
+</ion-header-bar>
+
+<ion-content>
+
+    <!-- The list directive is great, but be sure to also checkout the collection repeat directive when scrolling through large lists -->
+
+<div style="margin-top: 100px">
+    <button class="button button-dark" ng-click="showPopup()">
+        show(输入)
+    </button>
+    <button class="button button-primary" ng-click="showConfirm()">
+        Confirm(选择)
+    </button>
+    <button class="button button-positive" ng-click="showAlert()">
+        Alert(提示)
+    </button>
+
+    <script id="popup-template.html" type="text/ng-template">
+        <input ng-model="data.wifi" type="text" placeholder="Password">
+    </script>
+</div>
+</ion-content>
+
+

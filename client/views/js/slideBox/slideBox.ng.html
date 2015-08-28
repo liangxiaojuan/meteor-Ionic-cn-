@@ -1,0 +1,29 @@
+
+
+
+
+
+<div class="bar bar-header bar-positive">
+    <a class="button bar-positive"  href="/home/js">
+        <i class="icon ion-chevron-left"></i>
+    </a>
+    <div class="h1 title">slideBox(滑动框)</div>
+</div>
+
+<div style="margin-top: 50px">
+
+<ion-slide-box>
+
+    <ion-slide>
+        <div class="box blue" style="height:1000px; background-color: blue;"><h1 style="color:#FFFFFF">蓝色</h1></div>
+    </ion-slide>
+    <ion-slide>
+        <div class="box yellow" style="height:1000px;background-color: yellow;"> <h1 style="color:#FFFFFF" >黄色</h1></div>
+    </ion-slide>
+    <ion-slide on-slide-changed="slideHasChanged(index)">
+        <div class="box pink" style="height:1000px;background-color: pink;"><h1 style="color:#FFFFFF">粉色</h1></div>
+    </ion-slide>
+
+</ion-slide-box>
+
+</div>

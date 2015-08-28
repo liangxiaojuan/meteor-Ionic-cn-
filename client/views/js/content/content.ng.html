@@ -1,0 +1,21 @@
+
+<div class="bar bar-header">
+    <a class="button button-light"  href="/home/js">
+        <i class="icon ion-chevron-left"></i>
+    </a>
+    <div class="h1 title">refresher(下拉刷新)</div>
+</div>
+<ion-content>
+    <div style="margin-top: 50px">
+
+        <ion-refresher
+                pulling-text="下拉刷新..."
+                on-refresh="doRefresh()">
+        </ion-refresher>
+        <ion-list>
+            <ion-item ng-repeat="item in items">
+                {{item}}
+            </ion-item>
+        </ion-list>
+</div>
+</ion-content>

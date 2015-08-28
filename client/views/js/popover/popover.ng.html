@@ -1,0 +1,30 @@
+
+<div class="bar bar-header">
+    <a class="button button-light"  href="/home/js">
+        <i class="icon ion-chevron-left"></i>
+    </a>
+    <div class="h1 title">popover(弹出框)</div>
+</div>
+<ion-content>
+
+    <!-- The list directive is great, but be sure to also checkout the collection repeat directive when scrolling through large lists -->
+    <div style="margin-top: 50px">
+    <button class="button button-balanced"  ng-click="openPopover($event)">
+        点我
+    </button>
+
+    <script id="my-popover.html" type="text/ng-template">
+        <ion-popover-view>
+            <ion-header-bar>
+                <h1 class="title">My Popover Title</h1>
+                <a class="button button-outline icon-right ion-close-round button-balanced" ng-click="closePopover()"></a>
+            </ion-header-bar>
+            <ion-content>
+                Hello!
+            </ion-content>
+        </ion-popover-view>
+    </script>
+        </div>
+</ion-content>
+
+

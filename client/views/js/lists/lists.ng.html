@@ -1,0 +1,80 @@
+
+
+
+    <ion-header-bar class="bar-positive">
+        <div class="buttons">
+            <button class="button button-icon icon ion-ios-minus-outline"
+                    ng-click="data.showDelete = !data.showDelete; data.showReorder = false"></button>
+        </div>
+        <a class="button button-positive"  href="/home/js">
+            <i class="icon ion-chevron-left"></i>
+        </a>
+        <h1 class="title">List(列表)</h1>
+        <div class="buttons">
+            <button class="button" ng-click="data.showDelete = false; data.showReorder = !data.showReorder">
+              排序
+            </button>
+        </div>
+    </ion-header-bar>
+
+    <ion-content>
+
+        <!-- The list directive is great, but be sure to also checkout the collection repeat directive when scrolling through large lists -->
+
+        <ion-list show-delete="data.showDelete" show-reorder="data.showReorder">
+
+            <ion-item ng-repeat="item in items"
+                      item="item"
+                      href="#/item/{{item.id}}" class="item-remove-animate">
+                Item {{ item.id }}
+                <ion-delete-button class="ion-minus-circled"
+                                   ng-click="onItemDelete(item)">
+                </ion-delete-button>
+                <ion-option-button class="button-assertive"
+                                   ng-click="edit(item)">
+                    Edit
+                </ion-option-button>
+                <ion-option-button class="button-calm"
+                                   ng-click="share(item)">
+                    Share
+                </ion-option-button>
+                <ion-reorder-button class="ion-navicon" on-reorder="moveItem(item, $fromIndex, $toIndex)"></ion-reorder-button>
+            </ion-item>
+
+        </ion-list>
+        <ion-list>
+            <ion-item>Hello!</ion-item>
+            <ion-item href="#/detail">
+                Link to detail page
+            </ion-item>
+        </ion-list>
+        <ion-list show-delete="shouldShowDelete">
+            <ion-item>
+                <ion-delete-button class="ion-minus-circled"></ion-delete-button>
+                Hello, list item!
+            </ion-item>
+        </ion-list>
+        <ion-toggle ng-model="shouldShowDelete">
+            Show Delete?
+        </ion-toggle>
+
+        <ion-list  show-reorder="true">
+            <ion-item ng-repeat="item in items">
+                Item
+                <ion-reorder-button class="ion-navicon"
+                                    on-reorder="moveItem(item, $fromIndex, $toIndex)">
+                </ion-reorder-button>
+            </ion-item>
+        </ion-list>
+
+        <ion-list>
+            <ion-item>
+                I love kittens!
+                <ion-option-button class="button-positive">Share</ion-option-button>
+                <ion-option-button class="button-assertive">Edit</ion-option-button>
+            </ion-item>
+        </ion-list>
+
+    </ion-content>
+
+
