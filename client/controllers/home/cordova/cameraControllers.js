@@ -8,6 +8,7 @@ angular.module("index").controller("cordovaCtrl", ['$scope',
         $scope.cordovas=[
             {id:'camera',name:'Aamera(照相机)'},
             {id:'socialsharing',name:'Socialsharing(分享)'},
+            {id:'weixin',name:'weixin(微信功能)'},
             {id:'xxx',name:'cordova插件期待开发中..'},
         ];
 
